@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#4361ee" opacity="0.1"/>
+  
+  <!-- Mobile Phone Outline -->
+  <rect x="300" y="50" width="200" height="300" rx="20" fill="none" stroke="#4361ee" stroke-width="8"/>
+  
+  <!-- Screen -->
+  <rect x="320" y="80" width="160" height="240" fill="#4361ee" opacity="0.2"/>
+  
+  <!-- Home Button -->
+  <circle cx="400" cy="340" r="15" fill="#4361ee" opacity="0.5"/>
+  
+  <!-- UI Elements -->
+  <rect x="340" y="100" width="120" height="20" rx="5" fill="#4361ee"/>
+  <rect x="340" y="140" width="120" height="10" rx="5" fill="#4361ee" opacity="0.7"/>
+  <rect x="340" y="160" width="120" height="10" rx="5" fill="#4361ee" opacity="0.7"/>
+  <rect x="340" y="180" width="120" height="10" rx="5" fill="#4361ee" opacity="0.7"/>
+  
+  <!-- App Icons -->
+  <rect x="340" y="210" width="30" height="30" rx="5" fill="#4361ee"/>
+  <rect x="385" y="210" width="30" height="30" rx="5" fill="#4361ee"/>
+  <rect x="430" y="210" width="30" height="30" rx="5" fill="#4361ee"/>
+  
+  <rect x="340" y="250" width="30" height="30" rx="5" fill="#4361ee"/>
+  <rect x="385" y="250" width="30" height="30" rx="5" fill="#4361ee"/>
+  <rect x="430" y="250" width="30" height="30" rx="5" fill="#4361ee"/>
+</svg>
