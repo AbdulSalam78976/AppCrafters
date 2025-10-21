@@ -1,5 +1,11 @@
 // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Hide loading overlay
+    const loadingOverlay = document.getElementById('loading-overlay');
+    if (loadingOverlay) {
+        loadingOverlay.style.display = 'none';
+    }
     // Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 800,
@@ -16,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNav = document.querySelector('.mobile-nav');
 
     if (mobileMenuToggle && mobileNav) {
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function () {
             mobileNav.classList.toggle('active');
 
             // Change icon based on menu state
@@ -33,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close mobile menu when clicking on a link
         const mobileNavLinks = mobileNav.querySelectorAll('.nav-link');
         mobileNavLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 mobileNav.classList.remove('active');
                 const icon = mobileMenuToggle.querySelector('i');
                 icon.classList.remove('fa-times');
@@ -46,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
 
     if (header) {
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
@@ -59,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollTopBtn = document.querySelector('.scroll-top-btn');
 
     if (scrollTopBtn) {
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 300) {
                 scrollTopBtn.classList.add('active');
             } else {
@@ -67,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        scrollTopBtn.addEventListener('click', function(e) {
+        scrollTopBtn.addEventListener('click', function (e) {
             e.preventDefault();
             window.scrollTo({
                 top: 0,
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (filterBtns.length && portfolioItems.length) {
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 // Remove active class from all buttons
                 filterBtns.forEach(btn => btn.classList.remove('active'));
 
@@ -120,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Get form data
@@ -146,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             const targetId = this.getAttribute('href');
@@ -172,7 +178,7 @@ function initTypingAnimation() {
         'Transforming Ideas into Reality',
         'Creating Innovative Solutions'
     ];
-    
+
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -180,7 +186,7 @@ function initTypingAnimation() {
 
     function typeText() {
         const currentText = texts[textIndex];
-        
+
         if (isDeleting) {
             typingElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -218,6 +224,6 @@ function updateCurrentYear() {
 }
 
 // Call the function when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     updateCurrentYear();
 });

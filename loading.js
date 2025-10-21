@@ -3,8 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the loading overlay element
     const loadingOverlay = document.getElementById('loading-overlay');
     
+    // Immediately enable scrolling and hide loading overlay for development
+    document.body.classList.remove('no-scroll');
+    
     if (loadingOverlay) {
-        // Hide loading overlay after page is fully loaded
+        // Hide loading overlay immediately for development
+        setTimeout(function() {
+            loadingOverlay.classList.add('fade-out');
+            
+            setTimeout(function() {
+                loadingOverlay.style.display = 'none';
+                
+                // Trigger entrance animations
+                document.querySelectorAll('[data-entrance]').forEach(element => {
+                    element.classList.add('entrance-active');
+                });
+            }, 300);
+        }, 100);
+        
+        // Also hide loading overlay after page is fully loaded
         window.addEventListener('load', function() {
             // Add fade-out class
             loadingOverlay.classList.add('fade-out');
