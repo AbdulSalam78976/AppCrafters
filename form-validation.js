@@ -32,33 +32,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            // Check privacy policy checkbox
+            const privacyCheckbox = document.getElementById('privacy');
+            if (privacyCheckbox && !privacyCheckbox.checked) {
+                showFormMessage('error', 'Please accept the Privacy Policy and Terms of Service to continue.');
+                isValid = false;
+            }
+            
             if (isValid) {
                 // Show loading state
                 const submitBtn = contactForm.querySelector('button[type="submit"]');
-                const originalBtnText = submitBtn.innerHTML;
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnLoading = submitBtn.querySelector('.btn-loading');
+                
                 submitBtn.disabled = true;
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-flex';
+                
+                // Collect form data
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
                 
                 // Simulate form submission (replace with actual form submission)
                 setTimeout(() => {
                     // Show success message
-                    showFormMessage('success', 'Thank you for your message! We will get back to you soon.');
+                    showFormMessage('success', 'Thank you for your message! Our team will review your project details and get back to you within 2 hours during business hours.');
                     
                     // Reset form
                     contactForm.reset();
                     
                     // Reset button
                     submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalBtnText;
+                    btnText.style.display = 'inline';
+                    btnLoading.style.display = 'none';
                     
-                    // Clear success message after 5 seconds
+                    // Clear validation classes
+                    formInputs.forEach(input => {
+                        input.classList.remove('is-valid', 'is-invalid');
+                        const errorMsg = input.parentElement.querySelector('.error-message');
+                        if (errorMsg) errorMsg.remove();
+                    });
+                    
+                    // Clear success message after 8 seconds
                     setTimeout(() => {
                         const formMessage = document.querySelector('.form-message');
                         if (formMessage) {
                             formMessage.remove();
                         }
-                    }, 5000);
-                }, 1500);
+                    }, 8000);
+                }, 2000);
             }
         });
     }
