@@ -161,8 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-/
-/ Typing animation for hero title
+// Typing animation for hero title
 function initTypingAnimation() {
     const typingElement = document.querySelector('.typing-text');
     if (!typingElement) return;
@@ -208,3 +207,17 @@ function initTypingAnimation() {
     // Start typing animation after a short delay
     setTimeout(typeText, 1000);
 }
+// Update
+// current year in footer
+function updateCurrentYear() {
+    const currentYearElement = document.getElementById('currentYear');
+    if (currentYearElement) {
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+    }
+}
+
+// Call the function when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    updateCurrentYear();
+});
