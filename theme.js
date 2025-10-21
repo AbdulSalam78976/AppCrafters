@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply the saved theme on page load
     document.documentElement.setAttribute('data-theme', currentTheme);
     
+    // Ensure body has proper classes
+    document.body.classList.remove('no-scroll');
+    
     // Update toggle button state
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {

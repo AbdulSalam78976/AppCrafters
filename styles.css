@@ -1,14 +1,14 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-  /* Colors */
+  /* Colors - Dark Theme (Default) */
   --primary-color: #4361ee;
   --secondary-color: #3a0ca3;
   --accent-color: #4cc9f0;
-  --dark-color: #ffffff;
-  --light-color: #070e16;
-  --gray-color: #f0f0f0;
+  --dark-color: #070e16;
+  --light-color: #ffffff;
+  --gray-color: #f8f9fa;
   --text-color: #333333;
-  --text-light: #555555;
+  --text-light: #6c757d;
   --success-color: #4caf50;
   --warning-color: #ff9800;
   --error-color: #f44336;
@@ -33,12 +33,25 @@
   --transition-slow: 0.8s ease;
 
   /* Shadows */
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-
+/* Light Theme Variables */
+[data-theme="light"] {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #4cc9f0;
+    --dark-color: #ffffff;
+    --light-color: #070e16;
+    --gray-color: #f0f0f0;
+    --text-color: #333333;
+    --text-light: #555555;
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
 /* ===== BASE STYLES ===== */
 * {

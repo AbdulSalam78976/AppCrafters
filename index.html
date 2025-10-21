@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
-<body>
+<body class="no-scroll">
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Theme Toggle -->
+    <div id="theme-toggle" class="theme-toggle" title="Switch to Light Mode">
+        <i class="fas fa-sun"></i>
+    </div>
     
     <!-- Header -->
     <header class="header">
