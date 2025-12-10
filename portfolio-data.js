@@ -1,292 +1,139 @@
 // Portfolio Projects Data
 const portfolioProjects = [
     {
-        id: 'financeflow',
-        title: 'FinanceFlow',
+        id: 'complaint-management',
+        title: 'Complaint Management System',
         category: 'app',
-        industry: 'FinTech',
-        description: 'Revolutionary mobile banking app with advanced security features',
-        longDescription: 'FinanceFlow is a comprehensive mobile banking solution that revolutionizes how users manage their finances. Built with cutting-edge security protocols and an intuitive interface, it provides seamless digital banking, investment tracking, and expense management capabilities.',
-        technologies: ['React Native', 'Node.js', 'MongoDB', 'AWS', 'Blockchain'],
+        industry: 'Business Management',
+        description: 'Cross-platform complaint tracking and resolution system built with Flutter',
+        longDescription: 'A comprehensive complaint management system that streamlines the process of receiving, tracking, and resolving customer complaints. Built with Flutter for seamless cross-platform performance on iOS, Android, and web platforms.',
+        technologies: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore', 'Push Notifications'],
         features: [
-            'Secure biometric authentication',
-            'Real-time transaction monitoring',
-            'Investment portfolio tracking',
-            'AI-powered expense categorization',
-            'Multi-currency support',
-            'Cryptocurrency integration'
+            'Real-time complaint submission and tracking',
+            'Multi-level user roles (Admin, Manager, Staff)',
+            'Status tracking and updates',
+            'Push notifications for complaint updates',
+            'Analytics dashboard for complaint trends',
+            'Document and image attachment support',
+            'Priority-based complaint categorization',
+            'Response time tracking and SLA monitoring'
         ],
         results: [
-            { metric: 'User Engagement', value: '300%', description: 'increase in daily active users' },
-            { metric: 'Transaction Volume', value: '$2.5M', description: 'processed monthly' },
-            { metric: 'Security Rating', value: '99.9%', description: 'uptime with zero breaches' }
+            { metric: 'Response Time', value: '60%', description: 'faster complaint resolution' },
+            { metric: 'User Satisfaction', value: '4.8/5', description: 'average rating' },
+            { metric: 'Platform Support', value: '3+', description: 'iOS, Android, Web' }
         ],
-        images: {
-            thumbnail: 'images/portfolio/financeflow-thumb.jpg',
-            gallery: ['images/portfolio/financeflow-1.jpg', 'images/portfolio/financeflow-2.jpg'],
-            mockups: ['images/portfolio/financeflow-mockup.jpg']
-        },
+        link: '#', // Placeholder link
         client: {
-            name: 'Sarah Chen',
-            company: 'TechVenture Inc.',
-            testimonial: 'AppCrafters delivered our fintech app 2 weeks ahead of schedule. The attention to security and user experience was exceptional.'
+            name: 'Business Client',
+            company: 'Enterprise Solutions',
+            testimonial: 'The complaint management system has transformed how we handle customer feedback. Response times improved dramatically.'
         },
-        timeline: '6 months',
-        teamSize: 8,
+        timeline: '4 months',
+        teamSize: 3,
         status: 'completed',
         featured: true
     },
     {
-        id: 'ecotrack',
-        title: 'EcoTrack',
-        category: 'web',
-        industry: 'Environmental',
-        description: 'Comprehensive sustainability management platform for enterprises',
-        longDescription: 'EcoTrack empowers organizations to monitor, analyze, and reduce their environmental impact through advanced data analytics and reporting tools. The platform integrates with existing systems to provide real-time sustainability metrics.',
-        technologies: ['Flutter', 'Firebase', 'Python', 'TensorFlow', 'Google Cloud'],
-        features: [
-            'Carbon footprint calculation',
-            'Sustainability reporting dashboard',
-            'Environmental impact analytics',
-            'Compliance tracking',
-            'Goal setting and monitoring',
-            'Third-party integrations'
-        ],
-        results: [
-            { metric: 'Carbon Reduction', value: '50%', description: 'average client carbon footprint reduction' },
-            { metric: 'Cost Savings', value: '$1.2M', description: 'annual savings for clients' },
-            { metric: 'Compliance Rate', value: '100%', description: 'regulatory compliance achieved' }
-        ],
-        images: {
-            thumbnail: 'images/portfolio/ecotrack-thumb.jpg',
-            gallery: ['images/portfolio/ecotrack-1.jpg', 'images/portfolio/ecotrack-2.jpg'],
-            mockups: ['images/portfolio/ecotrack-mockup.jpg']
-        },
-        client: {
-            name: 'Marcus Rodriguez',
-            company: 'GreenEarth Solutions',
-            testimonial: 'The sustainability platform they built helped us reduce our carbon footprint by 50%. Outstanding technical expertise.'
-        },
-        timeline: '8 months',
-        teamSize: 6,
-        status: 'completed',
-        featured: true
-    },
-    {
-        id: 'mediconnect',
-        title: 'MediConnect',
+        id: 'school-management',
+        title: 'School Management System Admin Panel',
         category: 'app',
-        industry: 'Healthcare',
-        description: 'Advanced telemedicine platform connecting patients and healthcare providers',
-        longDescription: 'MediConnect bridges the gap between patients and healthcare providers through secure video consultations, digital prescription management, and comprehensive health record systems.',
-        technologies: ['Vue.js', 'Express.js', 'PostgreSQL', 'WebRTC', 'HIPAA Compliance'],
-        features: [
-            'HD video consultations',
-            'Digital prescription system',
-            'Electronic health records',
-            'Appointment scheduling',
-            'Insurance integration',
-            'Multi-language support'
-        ],
-        results: [
-            { metric: 'Patient Consultations', value: '200%', description: 'increase in monthly consultations' },
-            { metric: 'Patient Satisfaction', value: '4.9/5', description: 'average rating' },
-            { metric: 'Response Time', value: '< 2min', description: 'average connection time' }
-        ],
-        images: {
-            thumbnail: 'images/portfolio/mediconnect-thumb.jpg',
-            gallery: ['images/portfolio/mediconnect-1.jpg', 'images/portfolio/mediconnect-2.jpg'],
-            mockups: ['images/portfolio/mediconnect-mockup.jpg']
-        },
-        client: {
-            name: 'Dr. Emily Watson',
-            company: 'HealthFirst Clinic',
-            testimonial: 'Our telemedicine platform has revolutionized patient care. AppCrafters understood our complex requirements perfectly.'
-        },
-        timeline: '10 months',
-        teamSize: 10,
-        status: 'completed',
-        featured: true
-    },
-    {
-        id: 'retailpro',
-        title: 'RetailPro',
-        category: 'web',
-        industry: 'Retail',
-        description: 'Comprehensive e-commerce management system for retail businesses',
-        longDescription: 'RetailPro streamlines retail operations with advanced inventory management, sales analytics, and customer insights. The platform integrates seamlessly with existing POS systems and e-commerce platforms.',
-        technologies: ['Angular', '.NET Core', 'SQL Server', 'Azure', 'Power BI'],
-        features: [
-            'Real-time inventory tracking',
-            'Advanced sales analytics',
-            'Customer behavior insights',
-            'Multi-store management',
-            'Automated reordering',
-            'Performance dashboards'
-        ],
-        results: [
-            { metric: 'Operational Efficiency', value: '150%', description: 'improvement in workflow efficiency' },
-            { metric: 'Inventory Accuracy', value: '99.5%', description: 'real-time accuracy' },
-            { metric: 'Revenue Growth', value: '35%', description: 'increase in quarterly revenue' }
-        ],
-        images: {
-            thumbnail: 'images/portfolio/retailpro-thumb.jpg',
-            gallery: ['images/portfolio/retailpro-1.jpg', 'images/portfolio/retailpro-2.jpg'],
-            mockups: ['images/portfolio/retailpro-mockup.jpg']
-        },
-        client: {
-            name: 'James Thompson',
-            company: 'RetailMax',
-            testimonial: 'The e-commerce management system increased our operational efficiency by 150%. Incredible ROI.'
-        },
-        timeline: '7 months',
-        teamSize: 9,
-        status: 'completed',
-        featured: false
-    },
-    {
-        id: 'edulearn',
-        title: 'EduLearn',
-        category: 'web',
         industry: 'Education',
-        description: 'Interactive online learning platform with advanced progress tracking',
-        longDescription: 'EduLearn transforms online education with interactive courses, real-time progress tracking, and comprehensive certification systems. The platform supports multiple learning styles and provides detailed analytics.',
-        technologies: ['React', 'Django', 'Redis', 'PostgreSQL', 'AWS S3'],
+        description: 'Comprehensive school administration platform built with Flutter',
+        longDescription: 'A powerful admin panel for school management that handles student records, attendance, grades, staff management, and parent communication. Built with Flutter to provide a consistent experience across all platforms.',
+        technologies: ['Flutter', 'Dart', 'Firebase', 'Cloud Functions', 'Real-time Database'],
         features: [
-            'Interactive course builder',
-            'Real-time progress tracking',
-            'Video streaming platform',
-            'Certification system',
-            'Discussion forums',
-            'Mobile learning app'
+            'Student enrollment and profile management',
+            'Attendance tracking and reporting',
+            'Grade and report card management',
+            'Staff and teacher administration',
+            'Class and section management',
+            'Fee collection and payment tracking',
+            'Parent-teacher communication portal',
+            'Timetable and schedule management',
+            'Exam and assessment management',
+            'Analytics and performance reports'
         ],
         results: [
-            { metric: 'Student Enrollment', value: '500%', description: 'growth in first year' },
-            { metric: 'Course Completion', value: '85%', description: 'average completion rate' },
-            { metric: 'Student Satisfaction', value: '4.8/5', description: 'platform rating' }
+            { metric: 'Administrative Efficiency', value: '75%', description: 'reduction in paperwork' },
+            { metric: 'Parent Engagement', value: '90%', description: 'active parent participation' },
+            { metric: 'Data Accuracy', value: '99%', description: 'accurate record keeping' }
         ],
-        images: {
-            thumbnail: 'images/portfolio/edulearn-thumb.jpg',
-            gallery: ['images/portfolio/edulearn-1.jpg', 'images/portfolio/edulearn-2.jpg'],
-            mockups: ['images/portfolio/edulearn-mockup.jpg']
-        },
+        link: '#', // Placeholder link
         client: {
-            name: 'Lisa Park',
-            company: 'EduTech Academy',
-            testimonial: 'Student enrollment grew 500% after launching our platform. The user experience is phenomenal.'
+            name: 'School Administration',
+            company: 'Educational Institution',
+            testimonial: 'This admin panel has revolutionized our school management. Everything is now organized and accessible in one place.'
         },
-        timeline: '9 months',
-        teamSize: 7,
+        timeline: '5 months',
+        teamSize: 4,
         status: 'completed',
         featured: true
     },
     {
-        id: 'foodiehub',
-        title: 'FoodieHub',
-        category: 'app',
-        industry: 'Food & Beverage',
-        description: 'Restaurant discovery and table booking application',
-        longDescription: 'FoodieHub connects food enthusiasts with restaurants through advanced search, reviews, and seamless table booking. The app features AI-powered recommendations and social dining experiences.',
-        technologies: ['Swift', 'Kotlin', 'AWS', 'MongoDB', 'Machine Learning'],
+        id: 'classic-carry',
+        title: 'Classic Carry',
+        category: 'web',
+        industry: 'E-commerce',
+        description: 'Full stack ecommerce website with user and admin panel',
+        longDescription: 'A complete e-commerce solution features a robust user interface for shopping and a comprehensive admin panel for inventory and order management.',
+        technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
         features: [
-            'AI-powered restaurant recommendations',
-            'Real-time table booking',
-            'Social dining features',
-            'Photo sharing and reviews',
-            'Loyalty program integration',
-            'Multi-city support'
+            'User authentication and profile management',
+            'Product catalog with search and filtering',
+            'Shopping cart and checkout process',
+            'Admin dashboard for order management',
+            'Inventory tracking',
+            'Payment gateway integration'
         ],
         results: [
-            { metric: 'App Downloads', value: '1M+', description: 'downloads in first year' },
-            { metric: 'Restaurant Partners', value: '5,000+', description: 'active restaurant partners' },
-            { metric: 'Monthly Bookings', value: '50K+', description: 'successful reservations' }
+            { metric: 'Sales Growth', value: '150%', description: 'increase in online sales' },
+            { metric: 'User Base', value: '5k+', description: 'registered users' },
+            { metric: 'Uptime', value: '99.9%', description: 'service availability' }
         ],
-        images: {
-            thumbnail: 'images/portfolio/foodiehub-thumb.jpg',
-            gallery: ['images/portfolio/foodiehub-1.jpg', 'images/portfolio/foodiehub-2.jpg'],
-            mockups: ['images/portfolio/foodiehub-mockup.jpg']
-        },
+
         client: {
-            name: 'David Kumar',
-            company: 'Restaurant Chain Owner',
-            testimonial: 'The app helped us reach 1M+ downloads and significantly increased our bookings. Game-changing solution.'
+            name: 'Classic Carry Team',
+            company: 'Classic Carry',
+            testimonial: 'The platform is robust and easy to manage.'
         },
-        timeline: '8 months',
-        teamSize: 8,
+        timeline: '3 months',
+        teamSize: 2,
         status: 'completed',
-        featured: false
+        featured: true,
+        link: 'https://classiccarrry.com'
     },
     {
-        id: 'fittracker',
-        title: 'FitTracker Pro',
-        category: 'app',
-        industry: 'Health & Fitness',
-        description: 'Comprehensive fitness and wellness tracking application',
-        longDescription: 'FitTracker Pro combines workout planning, nutrition tracking, and social features to create a complete fitness ecosystem. The app uses advanced analytics to provide personalized fitness recommendations.',
-        technologies: ['React Native', 'GraphQL', 'MongoDB', 'TensorFlow', 'HealthKit'],
+        id: 'durvalis',
+        title: 'Durvalis',
+        category: 'web',
+        industry: 'Corporate',
+        description: 'Professional static website for business presence',
+        longDescription: 'A sleek and modern static website designed to establish a strong online presence for Durvalis. Optimized for performance and SEO.',
+        technologies: ['HTML5', 'CSS3', 'JavaScript'],
         features: [
-            'Personalized workout plans',
-            'Nutrition tracking and analysis',
-            'Social fitness challenges',
-            'Wearable device integration',
-            'Progress analytics',
-            'Virtual personal trainer'
+            'Responsive design',
+            'SEO optimization',
+            'Fast loading speeds',
+            'Contact form integration',
+            'Modern UI/UX'
         ],
         results: [
-            { metric: 'User Retention', value: '80%', description: 'monthly active users' },
-            { metric: 'Workout Completion', value: '92%', description: 'average completion rate' },
-            { metric: 'Health Improvement', value: '65%', description: 'users report better health' }
+            { metric: 'Load Time', value: '<1s', description: 'page load speed' },
+            { metric: 'SEO Score', value: '100', description: 'Google Lighthouse score' },
+            { metric: 'Traffic', value: '200%', description: 'increase in organic traffic' }
         ],
-        images: {
-            thumbnail: 'images/portfolio/fittracker-thumb.jpg',
-            gallery: ['images/portfolio/fittracker-1.jpg', 'images/portfolio/fittracker-2.jpg'],
-            mockups: ['images/portfolio/fittracker-mockup.jpg']
-        },
+
         client: {
-            name: 'Michael Foster',
-            company: 'FitLife Wellness',
-            testimonial: 'The fitness app exceeded our expectations with its comprehensive features and user engagement.'
+            name: 'Durvalis Management',
+            company: 'Durvalis',
+            testimonial: 'A beautiful and fast website that represents our brand perfectly.'
         },
-        timeline: '6 months',
-        teamSize: 6,
+        timeline: '1 month',
+        teamSize: 1,
         status: 'completed',
-        featured: false
-    },
-    {
-        id: 'smarthome',
-        title: 'SmartHome Hub',
-        category: 'tool',
-        industry: 'Smart Home',
-        description: 'IoT control platform for smart home automation',
-        longDescription: 'SmartHome Hub centralizes control of all IoT devices in modern homes. The platform provides intelligent automation, energy monitoring, and security features through an intuitive interface.',
-        technologies: ['IoT Integration', 'React', 'Node.js', 'MQTT', 'Machine Learning'],
-        features: [
-            'Universal device control',
-            'Intelligent automation rules',
-            'Energy consumption monitoring',
-            'Security system integration',
-            'Voice control support',
-            'Remote access capabilities'
-        ],
-        results: [
-            { metric: 'Energy Savings', value: '40%', description: 'average household energy reduction' },
-            { metric: 'Device Compatibility', value: '500+', description: 'supported IoT devices' },
-            { metric: 'User Satisfaction', value: '4.7/5', description: 'platform rating' }
-        ],
-        images: {
-            thumbnail: 'images/portfolio/smarthome-thumb.jpg',
-            gallery: ['images/portfolio/smarthome-1.jpg', 'images/portfolio/smarthome-2.jpg'],
-            mockups: ['images/portfolio/smarthome-mockup.jpg']
-        },
-        client: {
-            name: 'Robert Chen',
-            company: 'SmartTech Solutions',
-            testimonial: 'The IoT platform seamlessly integrated all our smart home products with impressive energy savings.'
-        },
-        timeline: '12 months',
-        teamSize: 12,
-        status: 'completed',
-        featured: true
+        featured: true,
+        link: 'https://durvalis.com'
     }
 ];
 
@@ -294,26 +141,26 @@ const portfolioProjects = [
 const PortfolioManager = {
     // Get all projects
     getAllProjects: () => portfolioProjects,
-    
+
     // Get projects by category
     getProjectsByCategory: (category) => {
         if (category === 'all') return portfolioProjects;
         return portfolioProjects.filter(project => project.category === category);
     },
-    
+
     // Get featured projects
     getFeaturedProjects: () => portfolioProjects.filter(project => project.featured),
-    
+
     // Get project by ID
     getProjectById: (id) => portfolioProjects.find(project => project.id === id),
-    
+
     // Get projects by industry
     getProjectsByIndustry: (industry) => portfolioProjects.filter(project => project.industry === industry),
-    
+
     // Search projects
     searchProjects: (query) => {
         const searchTerm = query.toLowerCase();
-        return portfolioProjects.filter(project => 
+        return portfolioProjects.filter(project =>
             project.title.toLowerCase().includes(searchTerm) ||
             project.description.toLowerCase().includes(searchTerm) ||
             project.industry.toLowerCase().includes(searchTerm) ||
